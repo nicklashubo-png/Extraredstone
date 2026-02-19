@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CR14 Server Bauideen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="idea-container">
+    <h1>Bauideen einreichen</h1>
+    <form id="ideaForm">
+      <label for="playerName">Spielername:</label>
+      <input type="text" id="playerName" name="playerName" required placeholder="Dein Name">
+
+      <label for="ideaTitle">Titel der Idee:</label>
+      <input type="text" id="ideaTitle" name="ideaTitle" required placeholder="Titel deiner Idee">
+
+      <label for="ideaDescription">Beschreibung:</label>
+      <textarea id="ideaDescription" name="ideaDescription" required placeholder="Erkläre deine Idee"></textarea>
+
+      <label for="redstoneAmount">Benötigter Redstone-Slot:</label>
+      <input type="number" id="redstoneAmount" name="redstoneAmount" min="1" required placeholder="z.B. 300">
+
+      <button type="submit">Idee einreichen</button>
+    </form>
+
+    <div id="submissionResult"></div>
+
+    <h2>Admin-Bereich: Ideen prüfen</h2>
+    <div id="adminPanel"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
